@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define overall styles for the music player */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #007bff, #00bfff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    background-color: linear-gradient(135deg, #007bff, #00bfff);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width:300px ;
+}
+
+/* Styles for album art */
+.album-art{
+    margin:0 auto;
+    max-width: 220px;
+    height:200px;
+    border-radius: 10px;
+}
+.album-art img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for song information */
+.song-info h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.song-info p {
+    font-size: 0.8rem;
+}
+.controls{
+    margin-top: 10px;
+}
+
+/* Styles for control buttons */
+.controls .control-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.controls .control-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the progress bar */
+.progress-bar {
+    margin-top: 20px;
+}
+
+#seek-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#seek-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#seek-bar::-webkit-slider-thumb:hover {
+    background-color: #0056b3;
+}
+
+/* Center text inside progress bar */
+progress {
+    vertical-align: middle;
+}
